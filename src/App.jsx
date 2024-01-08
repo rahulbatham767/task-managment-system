@@ -35,7 +35,7 @@ const App = () => {
         <Routes>
           <Route
             exact
-            path="/"
+            path="/task-managment-system"
             element={
               <PrivateRoute>
                 {" "}

@@ -17,7 +17,10 @@ const Header = ({ setContext }) => {
     >
       <Container fluid>
         <Navbar.Brand>
-          <NavLink to={"/"}> Task Management System</NavLink>
+          <NavLink to={"/task-managment-system"}>
+            {" "}
+            Task Management System
+          </NavLink>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
