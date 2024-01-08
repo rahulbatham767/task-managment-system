@@ -3,7 +3,6 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { getlogin, logOut, register } from "./User";
 import { addtask, deletetask, showtask, updatetask } from "./Api";
 
-// Create an asynchronous thunk for the login operation
 export const getLogin = createAsyncThunk(
   "user/getLogin",
   async (data, thunkAPI) => {
@@ -39,41 +38,59 @@ export const logout = createAsyncThunk("user/logout", async (_, thunkAPI) => {
     return thunkAPI.rejectWithValue(error.message);
   }
 });
-export const updateTask = createAsyncThunk("user/updateTask", async (data) => {
-  try {
-    const response = await updatetask(data);
-    return response.data;
-  } catch (error) {
-    throw new Error("Error during task update: " + thunkAPI.rejectWithValue);
+export const updateTask = createAsyncThunk(
+  "user/updateTask",
+  async (data, thunkAPI) => {
+    try {
+      const response = await updatetask(data);
+      return response.data;
+    } catch (error) {
+      throw new Error("Error during task update: " + thunkAPI.rejectWithValue);
+    }
   }
-});
+);
 
-export const deleteTask = createAsyncThunk("user/deleteTask", async (data) => {
-  try {
-    const response = await deletetask(data);
-    return response.data;
-  } catch (error) {
-    throw new Error("Error during task deletion: " + thunkAPI.rejectWithValue);
+export const deleteTask = createAsyncThunk(
+  "user/deleteTask",
+  async (data, thunkAPI) => {
+    try {
+      const response = await deletetask(data);
+      return response.data;
+    } catch (error) {
+      throw new Error(
+        "Error during task deletion: " + thunkAPI.rejectWithValue
+      );
+    }
   }
-});
+);
 
-export const showTask = createAsyncThunk("user/showTask", async () => {
-  try {
-    const response = await showtask();
-    return response;
-  } catch (error) {
-    throw new Error("Error during task retrieval: " + thunkAPI.rejectWithValue);
+export const showTask = createAsyncThunk(
+  "user/showTask",
+  async (_, thunkAPI) => {
+    try {
+      const response = await showtask();
+      return response;
+    } catch (error) {
+      throw new Error(
+        "Error during task retrieval: " + thunkAPI.rejectWithValue
+      );
+    }
   }
-});
+);
 
-export const addTask = createAsyncThunk("user/addTask", async (data) => {
-  try {
-    const response = await addtask(data);
-    return response.data;
-  } catch (error) {
-    throw new Error("Error during task addition: " + thunkAPI.rejectWithValue);
+export const addTask = createAsyncThunk(
+  "user/addTask",
+  async (data, thunkAPI) => {
+    try {
+      const response = await addtask(data);
+      return response.data;
+    } catch (error) {
+      throw new Error(
+        "Error during task addition: " + thunkAPI.rejectWithValue
+      );
+    }
   }
-});
+);
 
 // Create a Redux slice
 const ApiSlice = createSlice({

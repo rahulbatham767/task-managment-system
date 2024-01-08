@@ -3,13 +3,19 @@ import Carousel from "react-bootstrap/Carousel";
 const Banner = () => {
   return (
     <Carousel slide={false}>
-      hi
       <Carousel.Item>
         <div style={{ height: "400px" }}>
-          <img src="/image/time.jpg" alt="" className="img-fluid" />
+          <div style={{ height: "100%" }}>
+            <img
+              src="https://res.cloudinary.com/rahulbatham/image/upload/v1704626533/task-managment/m3_ldoutl.jpg"
+              alt=""
+              className="img-fluid"
+              style={{ height: "100%", width: "100%", objectFit: "none" }}
+            />
+          </div>
         </div>
 
-        <Carousel.Caption>
+        {/* <Carousel.Caption>
           <div>
             <h2 className="text-3xl font-bold mb-4">
               Effective Task Management
@@ -37,7 +43,7 @@ const Banner = () => {
               and continuous improvement in your work processes.
             </p>
           </div>
-        </Carousel.Caption>
+        </Carousel.Caption> */}
       </Carousel.Item>
     </Carousel>
   );

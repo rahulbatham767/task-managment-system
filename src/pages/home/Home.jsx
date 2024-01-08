@@ -6,7 +6,7 @@ import info from "./info.json";
 const Home = () => {
   return (
     <>
-      {/* <Banner /> */}
+      <Banner />
       <Container fluid>
         {info.map((elem) => {
           return elem.id % 2 === 0 ? (

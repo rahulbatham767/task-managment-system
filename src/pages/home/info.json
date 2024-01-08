@@ -1,25 +1,25 @@
 [
   {
     "id": 1,
-    "image": "/image/m2.jpg",
+    "image": "https://res.cloudinary.com/rahulbatham/image/upload/v1704626534/task-managment/time_jpivow.jpg",
     "heading": "Project Kickoff Meeting",
     "description": "Initiating a project begins with a comprehensive kickoff meeting. This pivotal gathering serves to define the project's overarching goals, delineate specific deliverables, and allocate roles and responsibilities among team members. Additionally, the kickoff meeting provides a forum for outlining project timelines, discussing expectations, and fostering a shared understanding of the project's strategic objectives. Establishing a strong foundation during this initial meeting is critical for successful collaboration and effective project execution. By ensuring that all stakeholders are aligned on the project's scope, objectives, and individual roles, the kickoff meeting sets the tone for a streamlined and coordinated workflow throughout the project's lifecycle."
   },
   {
     "id": 2,
-    "image": "/image/m3.jpg",
+    "image": "https://res.cloudinary.com/rahulbatham/image/upload/v1704626534/task-managment/managment_xg0xzg.jpg",
     "heading": "Task Prioritization",
     "description": "In the realm of task management, prioritization is a fundamental practice that significantly influences project success. Task prioritization involves systematically evaluating and categorizing tasks based on their urgency and importance. By differentiating between critical, high-priority tasks and those of lesser significance, teams can allocate resources and efforts more efficiently. This process ensures that the most crucial tasks receive immediate attention, promoting effective time management and overall project success. A well-executed task prioritization strategy enables teams to maintain focus, enhance productivity, and navigate project complexities with a clear and strategic approach to task completion."
   },
   {
     "id": 3,
-    "image": "/image/managment.jpg",
+    "image": "https://res.cloudinary.com/rahulbatham/image/upload/v1704626533/task-managment/m2_ryyalm.jpg",
     "heading": "Daily Standup Meetings",
     "description": "Daily standup meetings, a cornerstone of agile methodologies, serve as a dynamic mechanism for fostering collaboration and maintaining transparent communication within project teams. These brief, daily gatherings provide team members with an opportunity to share progress updates, discuss ongoing challenges, and coordinate tasks effectively. By creating a regular cadence of communication, daily standup meetings contribute to enhanced team cohesion and alignment on project goals. This iterative approach ensures that all team members remain informed, engaged, and synchronized, ultimately optimizing the project's trajectory toward successful completion of milestones and objectives."
   },
   {
     "id": 4,
-    "image": "/image/time.jpg",
+    "image": "https://res.cloudinary.com/rahulbatham/image/upload/v1704626533/task-managment/m3_ldoutl.jpg",
     "heading": "Performance Tracking",
     "description": "Effective performance tracking is a strategic imperative in the realm of project management. This multifaceted practice involves implementing systems and tools for monitoring both individual and team performance throughout a project's lifecycle. By systematically tracking progress against predefined milestones, project managers can identify deviations, address challenges proactively, and optimize overall project efficiency. Performance tracking facilitates real-time insights into task completion, resource utilization, and adherence to project timelines. This data-driven approach empowers project stakeholders to make informed decisions, enhance productivity, and ensure the successful attainment of project objectives, thereby contributing to a culture of continuous improvement within the project environment."
   }
