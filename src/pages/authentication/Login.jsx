@@ -29,7 +29,7 @@ function Login({ setContext }) {
     };
     dispatch(getLogin(data))
       .then(() => {
-        navigate("/");
+        navigate("/task-managment-system");
       })
       .catch((err) => {
         setContext({ msg: err, show: true, type: "warning" });
