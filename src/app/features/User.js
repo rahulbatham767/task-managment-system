@@ -1,5 +1,5 @@
 import axios from "axios";
-const Api_Url = "http://localhost:8080/api/v1/user/";
+const Api_Url = "https://task-managment-backend.vercel.app/api/v1/user/";
 
 export const getlogin = async (data) => {
   const res = await axios.post(Api_Url + "login", data);
