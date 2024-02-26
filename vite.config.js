@@ -5,13 +5,11 @@ export default defineConfig({
   root: "./",
   plugins: [react()],
   build: {
-    // rollupOptions: {
-    //   external: ["@reduxjs/toolkit", "react-redux"], // Add this line
-    // },
+    rollupOptions: {
+      external: ["mdb-react-ui-kit"],
+    },
   },
-  esbuild: {
-    // jsxInject: `import React from 'react';`, // Add this line if needed
-  },
+  esbuild: {},
   optimizeDeps: {
     include: ["@reduxjs/toolkit"],
   },
