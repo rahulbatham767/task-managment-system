@@ -4,11 +4,7 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   root: "./",
   plugins: [react()],
-  build: {
-    rollupOptions: {
-      external: ["mdb-react-ui-kit"],
-    },
-  },
+
   esbuild: {},
   optimizeDeps: {
     include: ["@reduxjs/toolkit"],
